@@ -119,7 +119,7 @@ pub async fn ldap_search(
             //trace!("{:?}", &entry);
             // Manage progress bar
             count += 1;
-            progress_bar(pb.to_owned(),"LDAP objects retreived".to_string(),count,"#".to_string());	
+            progress_bar(pb.to_owned(),"LDAP objects retrieved".to_string(),count,"#".to_string());	
             // Push all result in rs vec()
             rs.push(entry);
         }
